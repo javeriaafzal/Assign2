@@ -1,0 +1,7 @@
+Respected sir,
+I used a template that involved page transitions, as you allowed us to pick up templates for the UI. The directories : CSS , fonts and JS contain the files of the template.
+
+
+
+
+Javeria

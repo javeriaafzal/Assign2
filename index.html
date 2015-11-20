@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Organiser</title>
+		<link rel="stylesheet" type="text/css" href="clock.css"  />
+		<link rel="stylesheet" type="text/css" href="calendard.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="design.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		
+		<script src="js/modernizr.custom.js"></script>
+		<script src="digitaltime.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="clockmovement.js"></script>
+		<script src="calenderscript.js"></script>
+		
+		
+		
+	</head>
+	<body onload="startTime();loadWeather();">	
+		
+
+		<div class="pt-triggers">
+			<button id="iterateEffects" class="pt-touch-button">Next</button>
+			
+			
+			
+		</div>
+
+		<div id="pt-main" class="pt-perspective">
+			<div class="pt-page pt-page-1">
+			<h1><span>Welcome to your own</span><strong>Daily</strong> Organiser</h1>
+				
+			</div>
+			<div class="pt-page pt-page-2"><h1><span>Click on the time to view</span>
+			<strong><a href="#" id="button" ><p id="digital"></p></a></strong> Time Check</h1>
+			
+				<div id="overlay"></div>
+					<div id="popup">
+						<div class="popupcontrols">
+						<span id="popupclose">X</span>
+						</div>
+						<div class="popupcontent">
+						<center>
+						<div id="clock">
+							<div id="hour" style="transform: rotate(334.5deg);"><img src="http://demo.web3designs.com/images/hourhand.png"></div>
+							<div id="minute" style="transform: rotate(54deg);"><img src="http://demo.web3designs.com/images/minhand.png"></div>
+							<div id="second" style="transform: rotate(108deg);"><img src="http://demo.web3designs.com/images/sechand.png"></div>
+						</div>
+						</center>
+						</div>
+					</div>
+			
+			</div>
+			<div class="pt-page pt-page-3"><h1><span><a href="#" id="button1"><p id="datep"></p></a><br>Click on the date</span>
+			<strong>Calendar</strong></h1>
+			<div id="overlay"></div>
+					<div id="popup1" style="display: none">
+						<div class="popupcontrols" >
+						<span id="popupclose1">X</span>
+						</div>
+						<center>
+						<div class="popupcontent"  id = "cal">
+						</div>
+						</center>	
+							
+						
+		
+						<script type="text/javascript">writeCalendar()</script>
+						
+					</div>
+			
+			</div>
+			<div class="pt-page pt-page-4"><h1><span>Click on the temperature<br></span>
+			<strong><a href="#" id="button2"><p id="weatherp"></p></a></strong>Weather</h1>
+					<div id="overlay"></div>
+					<div id="popup2">
+						<div class="popupcontrols">
+							<span id="popupclose2">X</span>
+						</div>
+					<div class="popupcontent">
+					<p id ="wdisplay" style="color:black"></br></p>
+					<p id ="wdisplay1" style="color:black"></br></p>
+					<p id ="wdisplay2" style="color:black"></br></p>
+					<p id ="wdisplay3" style="color:black"></br></p>
+					
+					<p id ="wdisplay5" style="color:black"></br></p>
+					</div>
+					</div>
+			
+			
+			
+			
+			</div>
+			
+		</div>
+
+		<div class="pt-message">
+			<p>Your browser does not support CSS animations.</p>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.dlmenu.js"></script>
+		<script src="js/pagetransitions.js"></script>
+		<script src="todaysdate.js"></script>
+		<script src="getweather.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>
